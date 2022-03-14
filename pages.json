@@ -1,0 +1,54 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "美团外卖"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "美团外卖",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/icon/faxian.png",
+				"selectedIconPath": "static/icon/faxian_active.png",
+				"text": "发现"
+			}, 
+			{
+				"pagePath": "pages/order/index",
+				"iconPath": "static/icon/sousuo.png",
+				"selectedIconPath": "static/icon/sousuo_active.png",
+				"text": "我的订单"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/icon/wode.png",
+				"selectedIconPath": "static/icon/wode_active.png",
+				"text": "我的"
+			}
+		]
+	}
+}
