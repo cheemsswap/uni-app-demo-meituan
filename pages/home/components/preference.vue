@@ -2,39 +2,11 @@
 	<view>
 		<text>为你优选</text>
 		<scroll-view :scroll-x="true" class="panel-content" >
-				<view class="skill-wrapper">
+				<view class="skill-wrapper" v-for="preference of preferenceData||[]">
 					<view class="wrapper">
-						<image src="../../../static/images/1.jpg"></image>
-						<text>面与膳</text>
-						<text>[上海路]鱼面5选1</text>
-					</view>
-				</view>
-				<view class="skill-wrapper">
-					<view class="wrapper">
-						<image src="../../../static/images/1.jpg"></image>
-						<text>面与膳</text>
-						<text>[上海路]鱼面5选1</text>
-					</view>
-				</view>
-				<view class="skill-wrapper">
-					<view class="wrapper">
-						<image src="../../../static/images/1.jpg"></image>
-						<text>面与膳</text>
-						<text>[上海路]鱼面5选1</text>
-					</view>
-				</view>
-				<view class="skill-wrapper">
-					<view class="wrapper">
-						<image src="../../../static/images/1.jpg"></image>
-						<text>面与膳</text>
-						<text>[上海路]鱼面5选1</text>
-					</view>
-				</view>
-				<view class="skill-wrapper">
-					<view class="wrapper">
-						<image src="../../../static/images/1.jpg"></image>
-						<text>面与膳</text>
-						<text>[上海路]鱼面5选1</text>
+						<image :src="preference.image"></image>
+						<text>{{preference.title}}</text>
+						<text>{{preference.lable}}</text>
 					</view>
 				</view>
 		</scroll-view>
@@ -42,6 +14,9 @@
 </template>
 
 <script>
+	export default {
+		props:['preferenceData'],
+	}
 </script>
 
 <style scoped>
